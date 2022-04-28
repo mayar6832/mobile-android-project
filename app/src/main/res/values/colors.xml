@@ -8,4 +8,10 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="blue">#25c8ec</color>
+    <color name="red">#FF0000</color>
+    <color name="n">#42A5FF</color>
+    <color name="grey">#eee9e9</color>
+    <color name="nan">#14B6B5</color>
+    <color name="nan1">#25c8ec</color>
+    <color name="nan2">#0000cd</color>
 </resources>

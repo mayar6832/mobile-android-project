@@ -6,145 +6,142 @@ android:layout_height="match_parent"
 android:fillViewport="true">
 
 <LinearLayout
-
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
     android:orientation="vertical"
-
-
     >
-<!--
-android:background="@color/material_dynamic_secondary90"
-!-->
-    <EditText
-        android:id="@+id/searchid"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginRight="20dp"
-        android:background="@drawable/round_border"
-        android:drawableRight="@drawable/ic_baseline_search_24"
-        android:ems="10"
-        android:hint="@string/Destination"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:padding="10dp"
-        android:textSize="20dp"
-        />
-
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/back"
+            android:background="@drawable/arrow_back"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            />
     <TextView
-        android:id="@+id/ques1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingLeft="20dp"
-        android:paddingTop="10dp"
-        android:text="@string/checkIn"
-        android:textColor="@color/black"
-        android:textSize="25dp"
+        android:text="@string/welcome"
+        android:layout_marginRight="65dp"
+        android:layout_marginLeft="65dp"
+        android:textSize="40dp"
         android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:textAlignment="center"
         />
+    </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:orientation="horizontal">
-        <EditText
-            android:id="@+id/checkInDate"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        >
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:backgroundTint="@color/blue"
-            android:text="@string/jan"
-
+            android:id="@+id/entercountry"
+            android:text="@string/Destination"
+            android:textSize="25dp"
+            android:textStyle="bold"
             android:textColor="@color/black"
-            android:textSize="30dp"
-            android:textStyle="normal"
+            android:paddingLeft="20dp"
             />
 
-        <EditText
-            android:id="@+id/checkInDated"
+        <Spinner
+            android:id="@+id/countryspinner"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:backgroundTint="@color/blue"
-            android:text="@string/day"
-            android:layout_marginLeft="20dp"
+            android:entries="@array/country_array"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+        <TextView
+            android:id="@+id/first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:text="@string/checkIn"
             android:textColor="@color/black"
-            android:textSize="30dp"
-            android:textStyle="normal"
+            android:textSize="25dp"
+            android:textStyle="bold"
             />
-
-        <EditText
-            android:id="@+id/checkInDatey"
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:layout_marginLeft="20dp"
-            android:backgroundTint="@color/blue"
-            android:text="@string/year"
-
+            android:id="@+id/ques1"
             android:textColor="@color/black"
-            android:textSize="30dp"
-            android:textStyle="normal"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+
             />
     </LinearLayout>
-    <TextView
-        android:id="@+id/ques2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingLeft="20dp"
-        android:paddingTop="15dp"
-        android:text="@string/checkOut"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="25dp"
-        android:textStyle="bold"
- />
+        <CalendarView
+            android:id="@+id/calenderview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounderrr"
+            android:layout_marginLeft="10dp"
+
+            />
+
+    </LinearLayout>
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:orientation="horizontal">
-        <EditText
-            android:id="@+id/checkOutDate"
+        android:orientation="vertical">
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="10dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/outdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingTop="15dp"
+                android:text="@string/checkOut"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ques2"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
 
-            android:backgroundTint="@color/blue"
-            android:text="@string/jan1"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="30dp"
-            android:textStyle="normal"
-            />
-        <EditText
-            android:id="@+id/checkOutDate1"
+                />
+
+        </LinearLayout>
+        <CalendarView
+            android:id="@+id/calenderviewout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:layout_marginLeft="20dp"
-            android:backgroundTint="@color/blue"
-            android:text="@string/month1"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="30dp"
-            android:textStyle="normal"
-            />
-        <EditText
-            android:id="@+id/checkOutDate2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:layout_marginLeft="20dp"
-            android:backgroundTint="@color/blue"
-            android:text="@string/year1"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="30dp"
-            android:textStyle="normal"
+            android:background="@drawable/rounderrr"
+            android:layout_marginLeft="10dp"
             />
     </LinearLayout>
     <TextView
@@ -163,41 +160,36 @@ android:background="@color/material_dynamic_secondary90"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
-        android:orientation="horizontal">
-        <Button
+        android:orientation="horizontal"
+
+        >
+        <ImageButton
             android:id="@+id/add1"
+            android:background="@drawable/ic_baseline_add_circle_outline_24"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:text="@string/a"
-            android:textAlignment="center"
-            android:textSize="20dp"
-            android:background="@color/blue"
-            android:textStyle="bold"
+            android:padding="30dp"
+            android:contentDescription="@string/add_button"
+            android:onClick="counter1"
             />
-
         <TextView
             android:id="@+id/ques6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/num1"
-
             android:padding="10dp"
             android:textColor="@color/black"
-            android:textSize="25dp"
+            android:textSize="28dp"
             android:textStyle="normal"
             />
-
-        <Button
+        <ImageButton
             android:id="@+id/sub1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
-            android:padding="10dp"
-            android:text="@string/minus"
-            android:background="@color/blue"
-            android:textSize="20dp"
-            android:textStyle="bold"
+            android:background="@drawable/ic_baseline_remove_circle_outline_24"
+            android:padding="30dp"
+            android:contentDescription="@string/minus_button"
+            android:onClick="counter1"
             />
     </LinearLayout>
     <TextView
@@ -217,17 +209,14 @@ android:background="@color/material_dynamic_secondary90"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:orientation="horizontal">
-        <Button
+        <ImageButton
             android:id="@+id/add2"
+            android:background="@drawable/ic_baseline_add_circle_outline_24"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
-
-            android:text="@string/addd"
-            android:textAlignment="center"
-            android:background="@color/blue"
-            android:textSize="20dp"
-            android:textStyle="bold"
+            android:padding="30dp"
+            android:contentDescription="@string/add_button"
+            android:onClick="counter2"
             />
 
         <TextView
@@ -238,21 +227,19 @@ android:background="@color/material_dynamic_secondary90"
             android:text="@string/num2"
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="25dp"
+            android:textSize="28dp"
             android:textStyle="normal"
 
             />
 
-        <Button
+        <ImageButton
             android:id="@+id/sub2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:layout_marginEnd="15dp"
-            android:text="@string/subb"
-            android:background="@color/blue"
-            android:textSize="20dp"
-            android:textStyle="bold"
+            android:background="@drawable/ic_baseline_remove_circle_outline_24"
+            android:padding="30dp"
+            android:contentDescription="@string/minus_button"
+            android:onClick="counter2"
             />
     </LinearLayout>
     <TextView
@@ -272,16 +259,14 @@ android:background="@color/material_dynamic_secondary90"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:orientation="horizontal">
-        <Button
+        <ImageButton
             android:id="@+id/add3"
+            android:background="@drawable/ic_baseline_add_circle_outline_24"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
-            android:background="@color/blue"
-            android:text="@string/add"
-            android:textAlignment="center"
-            android:textSize="20dp"
-            android:textStyle="bold"
+            android:padding="30dp"
+            android:contentDescription="@string/add_button"
+            android:onClick="counter3"
             />
 
         <TextView
@@ -292,61 +277,33 @@ android:background="@color/material_dynamic_secondary90"
             android:text="@string/num3"
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="25dp"
+            android:textSize="28dp"
             android:textStyle="normal"
             />
 
-        <Button
+        <ImageButton
             android:id="@+id/sub3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/blue"
-            android:text="@string/sub"
-            android:textAlignment="center"
-            android:textSize="20dp"
-            android:textStyle="bold"
+            android:background="@drawable/ic_baseline_remove_circle_outline_24"
+            android:padding="30dp"
+            android:contentDescription="@string/minus_button"
+            android:onClick="counter3"
             />
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/apply"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="25dp"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/apply"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-
-            android:paddingLeft="35dp"
-            android:paddingRight="35dp"
-            android:layout_marginBottom="20dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/roundbouton"
-            android:text="@string/apply"
-            android:textAlignment="center"
-            android:textSize="30dp"
-
-
-            />
-
-        <Button
-            android:id="@+id/cancel"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:layout_marginBottom="20dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/roundbuton2"
-            android:text="@string/cancle"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="30dp"
-            />
-    </LinearLayout>
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:padding="15dp"
+        android:background="@drawable/roundbouton"
+        android:text="@string/apply"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        />
 
 </LinearLayout>
 </ScrollView>

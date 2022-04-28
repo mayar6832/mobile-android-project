@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gologin">تسجيل الدخول</string>
+    <string name="regist">تسجيل</string>
+    <string name="alreadyregest">Already Registered!Login Me</string>
+    <string name="Book">حجز</string>
+    <string name="Anight">الليلة</string>
+    <string name="EGP">جنية مصرى</string>
+    <string name="tolip_hotel">فندق توليب</string>
+    <string name="very">جيد جدا</string>
+    <string name="Anight980EGP">الليلة 980 جنية مصرى</string>
+    <string name="hotels">فنادق</string>
+    <string name="Destination">اختر بلد</string>
+    <string name="room">كم عدد الغرف؟</string>
+    <string name="adult">كم عدد الافرادالبالغين؟</string>
+    <string name="childern">كم عدد الاطفال؟</string>
+    <string name="checkIn">تاريخ تسجيل الدخول:</string>
+    <string name="checkOut">تاريخ تسجيل المغادرة:</string>
+    <string name="num1">1</string>
+    <string name="num2">1</string>
+    <string name="num3">0</string>
+    <string name="apply">بحث</string>
+    <string name="add_button">اضافة</string>
+    <string name="minus_button">انقاص</string>
+    <string name="date">حفظ تاريخى</string>
+    <string name="welcome">مرحبا!</string>
+    <string name="Flights">الرحلات الجوية</string>
+    <string name="Hotels">الفنادق</string>
+    <string name="Confirm">تاكيد</string>
+    <string name="Totalbookingprice">اجمالى سعر الحجز:</string>
+    <string name="Visanumber">رقم الفيزا:</string>
+    <string name="Name">الاسم:</string>
+    <string name="CheckOut">تسجيل المغادرة</string>
+    <string name="email">الايميل :</string>
+    <string name="app_name">التطبيق</string>
+    <string name="upcoming_flights">الرحلات القادمة</string>
+    <string name="filter">تصنيف</string>
+    <string name="go">اختار</string>
+    <string name="cost1">٤,٣٠٤ ج.م</string>
+    <string name="cost2">٣,٢٠٢ ج.م</string>
+    <string name="cost3">٣,٩٤٨ ج.م</string>
+    <string name="cost4">٥,٠٢١ ج.م</string>
+    <string name="time1">٥س ٢٥د</string>
+    <string name="time2">٥س ١٥د</string>
+    <string name="time3">٤س ٤٥د</string>
+    <string name="time4">٥س ٥٠د</string>
+    <string name="timefrom1">٠٩:١٠</string>
+    <string name="timefrom2">١٦:٣٥</string>
+    <string name="timefrom3">٠٦:١٥</string>
+    <string name="timefrom4">١١:٠٠</string>
+    <string name="timeto1">١٤:٣٥</string>
+    <string name="timeto2">٢١:٥٠</string>
+    <string name="timeto3">١١:٠٠</string>
+    <string name="timeto4">١٦:٥٠</string>
+    <string-array name="Hotels_rate">
+        <item>جيد جدا</item>
+        <item>جيد</item>
+        <item>جيد</item>
+        <item>ممتاز</item>
+
+    </string-array>
+    <string-array name="Hotels_name">
+        <item>فندق توليب</item>
+        <item>فندق براديس</item>
+        <item>فندق جراند بلازا</item>
+        <item>فندق هيلتون</item>
+    </string-array>
+    <string-array name="country_array">
+        <item>اسطنبول</item>
+        <item>دبى</item>
+        <item>القاهرة</item>
+        <item>بيروت</item>
+        <item>باريس</item>
+        <item>شرم الشيخ</item>
+        <item>الغردقة</item>
+        <item>الاسكندرية</item>
+        <item>المدينة المنورة</item>
+    </string-array>
+    <string-array name="Cites">
+
+        <item>مصر</item>
+        <item>دبى</item>
+        <item>المملكة العربية السعودية</item>
+        <item>امريكا</item>
+    </string-array>
+
+    <string-array name="back">
+
+        <item>اسيا </item>
+        <item>استراليا</item>
+        <item>الهند </item>
+        <item>الصين </item>
+
+
+    </string-array>
+
+    <string-array name="Levels">
+
+        <item>الدرجة الاولى </item>
+        <item>الدرجة السياحية</item>
+        <item>درجة رجال الاعمال</item>
+    </string-array>
+</resources>

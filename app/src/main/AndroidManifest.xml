@@ -10,7 +10,42 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication44">
         <activity
+            android:name=".LogIn"
+            android:exported="false" />
+        <activity
+            android:name=".ChooseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Hotel_Output"
+            android:exported="false" />
+
+        <receiver
+            android:name=".MyReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".Flights"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SearchHotel"
+            android:exported="false" />
+        <activity
+            android:name=".LogOut"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Register"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
